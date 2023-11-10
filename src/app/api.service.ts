@@ -9,4 +9,7 @@ export class ApiService {
   private getUrl = 'https://datausa.io/api/data?drilldowns=Nation&measures=Population';
 
   constructor(private http: HttpClient) { }
+  getData(){
+    return this.http.get(this.getUrl);
+  }
 }
