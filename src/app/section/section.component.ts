@@ -6,6 +6,11 @@ import { ApiService } from '../api.service';
   templateUrl: './section.component.html',
   styleUrls: ['./section.component.css']
 })
-export class SectionComponent {
+export class SectionComponent implements OnInit {
+
+  constructor(private apiService: ApiService){}
+
+  ngOnInit(): void {
+  }
 
 }
