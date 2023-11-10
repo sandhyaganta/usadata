@@ -6,5 +6,7 @@ import { HttpClient } from '@angular/common/http';
 })
 export class ApiService {
 
+  private getUrl = 'https://datausa.io/api/data?drilldowns=Nation&measures=Population';
+
   constructor(private http: HttpClient) { }
 }
